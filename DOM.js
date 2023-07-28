@@ -1,0 +1,7 @@
+/*
+Document Object Model
+    Allows JavaScript to access HTML elements and styles to manipulate them.
+    Created automatically by HTML when the web page loads.
+
+
+ */

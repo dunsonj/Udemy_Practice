@@ -27,10 +27,50 @@ another way can be:
 const kira = [
    'Kira',
     'Karilen',
-   '22',
+   22,
     'software_developer'
 ];
 
+const types = []; //an empty array needs to be created to pass the elements of the kira array through it
+
 for (let i =0; i < kira.length ; i++) {
-    console.log(kira[i]);
+    console.log(kira[i], typeof kira[i]);
+
+
+    //one way of filling an array
+    types[i] = typeof kira[i]; //the typeof will create an array that has all the elements of the kira array.
 }
+console.log(types)
+
+
+/*
+Continue and break
+
+Continue: To continue on to the next one
+Break; To finish the loop completely
+
+only for strings
+
+for (let i = 0; i < kira.length; i++){
+if(typeof kira[i] !== 'string') continue;
+
+console.log(kira[i], typeof kira[i]);
+}
+
+only for numbers
+
+for (let i = 0; i < kira.length; i++){
+if(typeof kira[i] === 'number') break;
+
+console.log(kira[i], typeof kira[i]);
+}
+The break terminates the loop
+ */
+
+/*
+Looping Backwards and Looping in Loops
+
+
+
+
+ */
