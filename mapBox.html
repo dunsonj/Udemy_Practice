@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radius Validation</title>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.0/mapbox-gl.css" rel="stylesheet" />
+</head>
+<body>
+<div id="map" style="height: 500px;"></div>
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWFkYWxlaW5lZGVmZmluYmF1Z2giLCJhIjoiY2xnem01M3o1MDEyODNlb2liMGd1bmJ5cSJ9.hDk5lSq6smYuvCgd3orXmQ';
+
+  const address = "6011 W. Thomas Rd, Phoenix AZ 85033"; // Replace with the specific address you want to validate
+  const radiusInMiles = 10;
+
+  const geocoder = new MapboxGeocoder({
+    accessToken: mapboxgl.accessToken,
+    mapboxgl: mapboxgl,
+    placeholder: "Enter an address...",
+    marker: false
+  });
+
+  const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [-112.177220, 33.480930], // Default center coordinates (Phoenix, AZ)
+    zoom: 12
+  });
+
+  map.addControl(geocoder);
+
+  geocoder.on('result', (e) => {
+    const location = e.result.center;
+
+    // Clear previous circles
+    if (map.getLayer('circle-layer')) {
+      map.removeLayer('circle-layer');
+      map.removeSource('circle-source');
+    }
+
+    // Add a circle to the map
+    map.addSource('circle-source', {
+      type: 'geojson',
+      data: {
+        type: 'Feature',
+        geometry: {
+          type: 'Point',
+          coordinates: [location[0], location[1]]
+        }
+      }
+    });
+
+    map.addLayer({
+      id: 'circle-layer',
+      type: 'circle',
+      source: 'circle-source',
+      paint: {
+        'circle-radius': {
+          stops: [[0, 0], [20, radiusInMiles * 1609.34]], // Convert miles to meters
+          base: 2
+        },
+        'circle-color': '#FF0000',
+        'circle-opacity': 0.8,
+        'circle-stroke-color': '#FF0000',
+        'circle-stroke-opacity': 1,
+        'circle-stroke-width': 2
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
+>
