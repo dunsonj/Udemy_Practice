@@ -22,6 +22,13 @@ public class BreakandContinue {
         // Example 3: Find the smallest number greater than 20 that is divisible by 3 (using break)
         // TODO: Write a loop that finds the smallest number greater than 20 that is divisible by 3 using the 'break' statement
 
+        for (int j =21; j < 30; j++){
+            if (j % 3 == 0){
+                System.out.println("The smallest number greater than 20 divisible by 3 is " + j);
+                break;
+            }
+            System.out.println(j);
+
         // Example 4: Print all even numbers from 1 to 20, and skip odd numbers (using continue)
         // TODO: Write a loop that prints all even numbers from 1 to 20, skipping odd numbers using the 'continue' statement
 
@@ -32,4 +39,4 @@ public class BreakandContinue {
             System.out.println(n);
         }
     }
-}
+}}
