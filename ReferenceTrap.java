@@ -11,7 +11,11 @@ public class ReferenceTrap {
  * for loop then update the array at what ever index you want.
  */
 
-
+/**
+ * Arrays.copyOf(array, array.lenght);
+ * it takes two arguments, the array you will like to copy and how much of it you will like to copy.
+ *
+ */
 
 
     }
