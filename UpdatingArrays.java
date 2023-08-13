@@ -16,6 +16,9 @@ public class UpdatingArrays {
             newMenu[i] = menu[i]; //the loop runs three times and  copies every element from menu to newMenu
         }
         System.out.println(Arrays.toString(newMenu)); //this prints the contents of the array to a string
+        newMenu[3] = "House Blend";
+        newMenu[4] = "Dark Roast";
 
+        System.out.println(Arrays.toString(newMenu));
     }
 }
