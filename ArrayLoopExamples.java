@@ -41,7 +41,7 @@ public class ArrayLoopExamples {
             // TODO: Use a for loop to find the index of targetValue in the data array
             for (int i = 0; i < data.length ; i++){
                 if(data[i] == 4){
-                    System.out.println(i;
+                    System.out.println(i);
                 }
             }
 
