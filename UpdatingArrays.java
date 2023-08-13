@@ -11,6 +11,9 @@ public class UpdatingArrays {
 
         //to expand an array a new array has to be done
         String [] newMenu = new String[5];
+        for (int i = 0; i <menu.length; i++){
+            System.out.println(i + ". " + menu[i]);
+        }
 
 
     }
