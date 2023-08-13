@@ -12,7 +12,9 @@ public class UpdatingArrays {
         //to expand an array a new array has to be done
         String [] newMenu = new String[5];
         for (int i = 0; i <menu.length; i++){
-            System.out.println(i + ". " + menu[i]);
+//            System.out.println(i + ". " + menu[i]);
+            newMenu[i] = menu[i]; //the loop runs three times and  copies every element from menu to newMenu
+
         }
 
 
