@@ -13,6 +13,11 @@ public class TDarrays {
          */
 
         int [] [] grades = new int [3][4];
+        grades[0][0] = 72;
+        grades[0][1] = 76;
+        grades[0][2] = 78;
+        grades[0][3] = 74;
+
         System.out.println(Arrays.toString(grades[0]));
         System.out.println(Arrays.toString(grades[1]));
         System.out.println(Arrays.toString(grades[2]));
