@@ -31,7 +31,17 @@ public class TDarrays {
         System.out.println(Arrays.toString(grades[0]));
         System.out.println(Arrays.toString(grades[1]));
         System.out.println(Arrays.toString(grades[2]));
+/**
+ * A faster way to initialize the array by putting the arrays bundled in a 2D Array
+ */
 
+int [][] temperatures = {
+        {98, 90, 93, 92},
+        {101, 103, 110, 101},
+        {90, 99, 100, 105},
+};
+
+        System.out.println(temperatures);
 
 
     }
