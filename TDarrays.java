@@ -18,6 +18,11 @@ public class TDarrays {
         grades[0][2] = 78;
         grades[0][3] = 74;
 
+        grades[1][0] = 62;
+        grades[2][1] = 66;
+        grades[3][2] = 68;
+        grades[4][3] = 64;
+
         System.out.println(Arrays.toString(grades[0]));
         System.out.println(Arrays.toString(grades[1]));
         System.out.println(Arrays.toString(grades[2]));
