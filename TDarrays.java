@@ -41,7 +41,7 @@ int [][] temperatures = {
         {90, 99, 100, 105},
 };
 
-        System.out.println(temperatures);
+        System.out.println(temperatures[1][3]);
 
 
     }
