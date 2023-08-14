@@ -31,7 +31,7 @@ public class TDarrays {
         System.out.println(Arrays.toString(grades[0]));
         System.out.println(Arrays.toString(grades[1]));
         System.out.println(Arrays.toString(grades[2]));
-
+//Nested loop for the 2D array
         for (int j = 0; j < grades[0].length; j++){
             System.out.println(grades[0][j]);
         }
@@ -53,7 +53,7 @@ int [][] temperatures = {
         {101, 103, 110, 101},
         {90, 99, 100, 105},
 };
-
+//Nested loop for the 2D array
         for (int j = 0; j < temperatures[0].length; j++){
             System.out.println(temperatures[0][j]);
         }
