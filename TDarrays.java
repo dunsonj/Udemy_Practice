@@ -31,6 +31,19 @@ public class TDarrays {
         System.out.println(Arrays.toString(grades[0]));
         System.out.println(Arrays.toString(grades[1]));
         System.out.println(Arrays.toString(grades[2]));
+
+        for (int j = 0; j < grades[0].length; j++){
+            System.out.println(grades[0][j]);
+        }
+
+        for (int j = 0; j < grades[1].length; j++){
+            System.out.println(grades[1][j]);
+        }
+
+        for (int j = 0; j < grades[2].length; j++){
+            System.out.println(grades[2][j]);
+        }
+
 /**
  * A faster way to initialize the array by putting the arrays bundled in a 2D Array
  */
@@ -41,7 +54,22 @@ int [][] temperatures = {
         {90, 99, 100, 105},
 };
 
+        for (int j = 0; j < temperatures[0].length; j++){
+            System.out.println(temperatures[0][j]);
+        }
+
         System.out.println(temperatures[1][3]);
+
+
+
+        /**
+         * Using a nested loop to print the values of the array
+         *
+         *
+         * for (int j = 0; j < grades[0].length; j++){
+         *             System.out.println(grades[0][j]);
+         *         }
+         */
 
 
     }
