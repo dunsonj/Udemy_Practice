@@ -60,7 +60,7 @@ int [][] temperatures = {
 
         System.out.println(temperatures[1][3]);
 
-
+///The correct way to do loops with a 2D Array
 
         /**
          * Using a nested loop to print the values of the array
@@ -84,6 +84,12 @@ int [][] temperatures = {
          *             System.out.println(grades[2][j]);
          *         }
          *
+         * example will be:
+         * for (int i = 0; i < grades.length; i++) {
+         * for  (int j = 0; j < grades[i].length; j++){
+         * println(grades[i][j]);
+         * }
+         * }
          *
          */
 
