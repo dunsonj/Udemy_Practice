@@ -69,6 +69,22 @@ int [][] temperatures = {
          * for (int j = 0; j < grades[0].length; j++){
          *             System.out.println(grades[0][j]);
          *         }
+         *
+         *         This way is not recommended because wrting a loop for every row can get messy, so
+         *         a nested loop is best
+         *             for (int j = 0; j < grades[0].length; j++){
+         *             System.out.println(grades[0][j]);
+         *         }
+         *
+         *         for (int j = 0; j < grades[1].length; j++){
+         *             System.out.println(grades[1][j]);
+         *         }
+         *
+         *         for (int j = 0; j < grades[2].length; j++){
+         *             System.out.println(grades[2][j]);
+         *         }
+         *
+         *
          */
 
 
