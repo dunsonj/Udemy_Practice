@@ -64,7 +64,6 @@ int [][] temperatures = {
                 System.out.println(grades[i][j]);
             }
         }
-
         /**
          * Using a nested loop to print the values of the array
          *
