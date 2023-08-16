@@ -58,7 +58,6 @@ int [][] temperatures = {
             System.out.println(temperatures[0][j]);
         }
         System.out.println(temperatures[1][3]);
-
 ///The correct way to do loops with a 2D Array
         for (int i = 0; i < grades.length; i++) {
             for (int j = 0; j < grades[i].length; j++) {
