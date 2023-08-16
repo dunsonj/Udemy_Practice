@@ -11,7 +11,6 @@ public class TDarrays {
          *  the first bracket is the number of rows and the second bracket is the number of elements per row
          *
          */
-
         int [] [] grades = new int [3][4];
         grades[0][0] = 72;
         grades[0][1] = 76;
