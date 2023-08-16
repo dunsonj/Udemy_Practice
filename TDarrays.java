@@ -2,7 +2,6 @@ import java.util.Arrays;
 
 public class TDarrays {
     public static void main(String[] args) {
-
         /**
          * To create a 2D Array you need to create a tutera, write the data you're storing with two brackets
          *
