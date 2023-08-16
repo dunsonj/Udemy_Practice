@@ -47,7 +47,6 @@ public class TDarrays {
 /**
  * A faster way to initialize the array by putting the arrays bundled in a 2D Array
  */
-
 int [][] temperatures = {
         {98, 90, 93, 92},
         {101, 103, 110, 101},
